@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8"> 
+        <title>Treasure Hunt </title>
+        <link rel="icon" type="image/x-icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBLL92qKnCuas_ItMp1C7CjvmgEvG8zsowyOQl6KXq1b-t23BHswYyE43pK5e5ffmMmQY&usqp=CAU">
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <h1 class="title">Treasure Hunt Game</h1>
+        <img src="https://www.litmos.com/wp-content/uploads/2019/03/Lucky-Litmos-Lenny_Day.png"
+            alt="Pot 'o Gold"
+            width="80%"
+            max-width="200"/>
+        <div class="section">
+            <h2>Directions</h2>
+            <li>Click on a box to reveal item</li>
+            <li>If you find a bomb you lose</li>
+            <li>If you find the gold, you win</li>
+        </div>
+        <div class="section">
+        <h2>History</h2>
+            <li id="wins">Wins=0</li>
+            <li id="losses">Losses=0</li>
+        </div>
+        <div class="section">
+        <h2>Options</h2>
+        <button type="button" onclick="restart()"> Restart Game </button>
+        </div>
+        <div class="section">
+        <h2>The Game</h2>
+        <table id="theGame">
+            <tr>
+                <td id=0 onclick="treasure(0)">?</td>
+                <td id=1 onclick="treasure(1)">?</td>
+                <td id=2 onclick="treasure(2)">?</td>
+            </tr>
+            <tr>
+                <td id=3 onclick="treasure(3)">?</td>
+                <td id=4 onclick="treasure(4)">?</td>
+                <td id=5 onclick="treasure(5)">?</td>
+            </tr>
+            <tr>
+                <td id=6 onclick="treasure(6)">?</td>
+                <td id=7 onclick="treasure(7)">?</td>
+                <td id=8 onclick="treasure(8)">?</td>
+            </tr>
+        </table>
+        </div>
+        <script type ="text/javascript" src="treasurehunt.js"></script>
+    </body>
+
+    <footer>
+        &copy;Alex and Chris
+    </footer>
+</html>

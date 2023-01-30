@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap');
+
+* {
+    text-align: center;
+    font-family: 'Irish Grover', cursive;
+    background-color: skyblue;
+    margin: auto;
+}
+
+h2 {
+    text-decoration-line: underline;
+    background-color: slategray;
+}
+
+li {
+    background-color: slategray;
+}
+
+td {
+    background-color: slategray;
+}
+
+button{
+    background-color: slategray;
+}
+
+.section {
+    border: 4px double limegreen;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    padding: 15px;
+    max-width: 300px;
+    background-color: slategrey;
+}
+
+td:hover { 
+    background-color: yellow;
+    animation: buttonHover 1s infinite;
+}
+
+button:hover { 
+    background-color: yellow;
+}
+
+#theGame {
+    table-layout: fixed;
+    width: 80%;
+    height: 80%;
+    min-height: 200px;
+    font-size: 20pt;
+    background-color: black;
+    border: 2px solid black;
+}
+
+@keyframes buttonHover{
+    0%{
+     trasform: scaleX(1);
+    } 
+    50%{
+     transform: scaleX(0);
+    }
+    100%{
+     transform: scaleX(1);
+    }
+ }
